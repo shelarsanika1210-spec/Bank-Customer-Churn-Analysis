@@ -1,0 +1,22 @@
+-- Bank Customer Churn Analysis
+-- Database: BANK_DB
+
+CREATE TABLE CUSTOMERS (
+    CUSTOMER_ID INT PRIMARY KEY,
+    NAME VARCHAR(100),
+    AGE INT,
+    CREDIT_SCORE INT,
+    BALANCE FLOAT,
+    NUM_OF_PRODUCTS INT,
+    IS_ACTIVE BOOLEAN,
+    TENURE_YEARS INT,
+    EXITED BOOLEAN
+);
+
+-- Sample Data
+INSERT INTO CUSTOMERS VALUES
+(1, 'Aarav Sharma', 32, 650, 50000, 1, FALSE, 5, TRUE),
+(2, 'Priya Patel', 45, 720, 120000, 2, TRUE, 8, FALSE),
+(3, 'Rohan Verma', 28, 580, 20000, 1, FALSE, 2, TRUE),
+(4, 'Sneha Iyer', 38, 690, 80000, 2, TRUE, 6, FALSE),
+(5, 'Vikram Singh', 52, 610, 30000, 1, FALSE, 3, TRUE);
